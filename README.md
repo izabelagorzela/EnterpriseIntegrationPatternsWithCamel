@@ -2,6 +2,6 @@
 
 Presentation of chosen patterns.  
 
-Directories "sampleDirectory", "from" and "to" will be created after running application. There are example files for processing in resources directory (fileForProcessing.csv, fileForProcessing.txt, fileForProcessing.xml, fileForProcessing.md). In order to process them move one of them to created directory "from".  
+Directories "sampleDirectory", "from" and "to" will be created after running application. There are example files for processing in resources directory (fileForProcessing.csv, fileForProcessing.txt, fileForProcessing.xml, fileForProcessing.md, fileForProcessing.json). In order to process them move one of them to created directory "from".  
 
 Work in progress.

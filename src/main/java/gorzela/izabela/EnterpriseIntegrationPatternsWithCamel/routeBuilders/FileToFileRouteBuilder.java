@@ -16,6 +16,11 @@ public class FileToFileRouteBuilder extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        from("file:sampleDirectory/from").unmarshal().json(JsonLibrary.Jackson, Fruit[].class).split().body().filter().method(FruitFilter.class,"isAllowedId").process(bodyPrintingProcessor).stop();
+        from("file:sampleDirectory/from")
+                .unmarshal()
+                .json(JsonLibrary.Jackson, Fruit[].class)
+                .split().body()
+                .filter().method(FruitFilter.class,"isAllowedId")
+                .process(bodyPrintingProcessor).stop();
     }
 }

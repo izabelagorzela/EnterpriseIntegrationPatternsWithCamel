@@ -21,6 +21,10 @@ public class CsvToH2RouteBuilder extends RouteBuilder {
 
         bindyCsvDataFormat.setClassType(Fruit.class);
 
-        from("file:sampleDirectory/from").unmarshal(bindyCsvDataFormat).split(body()).process(simplePrintingProcessor).to("jpa:t2");
+        from("file:sampleDirectory/from")
+                .unmarshal(bindyCsvDataFormat)
+                .split(body())
+                .process(simplePrintingProcessor)
+                .to("jpa:t2");
     }
 }
